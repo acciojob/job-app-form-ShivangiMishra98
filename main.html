@@ -3,75 +3,50 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+	<header>
+		<h1>Job App Form</h1>
+	</header>
+	
 	<!-- the entire body must be written by student -->
-	<form>
-	<label for="fname">Name</label>
-	<br>
-	<input type="text" id="name" name="name" value="">
-	<br>
-	<label for="email">Email</label>
-	<br>
-	<input type="email" id="email" name="email" value="">
-	<br>
-	<label for="gender">Gender</label>
-	<br>
-	<input type="radio" name="gender" value="male">Male 
-	<input type="radio" name="gender" value="Female">Female
-	<br>
-	<label for="laptop">Laptop brands</label>
-	<br>
-	<input type="radio" name="laptop" value="male">Apple 
-	<input type="radio" name="laptop" value="Female">Asus
-	<input type="radio" name="laptop" value="laptop">HP
-	<br>
-	<label for="age">Age</label>
-	<input type="age" id="age" name="age" value="">
-	<br>
-	<label for="dob">DOB</label>
-	<input type="dob" id="dob" name="dob" value="">
-	<br>
-	<label for="password">password</label>
-	<input type="password" id="password" name="password" value="">
-	<br>
-	<br>
-	<button>Submit</button>
-	<form method="post">
-		<label for="name">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<input type="text" id="name" required></br></br>
-
-	    <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<input id="email" type="email" required></br></br>
+     <form action="Formdata.html" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" required>
+        <br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" required>
+		<br><br>
+		<label for="gender">Gender:</label>
+		<input type="radio" id="gender" name="gender"  value="male" required>Male
+		<input type="radio" id="gender"  name="gender"   value="female" required>Female <br><br>
+        
+		<label for="laptop">Laptop Brand:
+			<select name="laptop-brand" id="laptop">
+				<option value="">Apple</option>
+				<option value="">Asus</option>
+				<option value="">HP</option>
+			</select>
+		</label>
+		
+		<br><br>
+		<label for="age">Age:</label>
+		<input type="number" id="age" required><span>Years</span> 
+		<br><br>
+		<label for="dob">Date Of Birth:</label>
+		<input type="date" id="dob" required>
+         <br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" required>
+        <br><br>
+		<label for="website URL of their portfolio">portfolio website URL:</label>
+		<input type="url" id="portfolio "   name="portfolio" required><br><br>
+		<label for="portfolio">portfolio website URL:</label>
+		<input type="url" id="portfolio"   name="portfolio"><br><br>
+		<button type="submit">Submit</button>
 
 
-		<label for="male">Male</label>
-		<input id="male" name="gender" type="radio" required>
-
-
-</form>
-		<label for="female">Female</label>
-		<input id="female" name="gender" type="radio" required></br></br>
-
-		<label for="laptop" name="laptop">Laptop Brands</label>
-			<select id="laptop" required>
-				<option id="laptop" value="asus">Asus</option>
-				<option id="laptop" value="hp">HP</option>
-				<option id="laptop" value="apple">Apple</option>
-	        </select></br></br>
-
-            <label for="age">Age</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	        <input id="age" type="number" required></br></br>
-
-            <label for="dob">DOB</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<input id="dob" type="date" required></br></br>
-
-            <label for="password">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<input id="password" type="password"  required></br></br>
-
-	        <label for="portfolio">Portfolio</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input id="portfolio" type="url" required></br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	        <button id="button" type="submit">Submit</button>
-	</form>
+	 </form>
     <script type="text/javascript" src="./script.js">
 </script>
+</body>
+</html>
